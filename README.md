@@ -15,7 +15,7 @@ cd ./cashino
 ```sh
 cd ./cashino-client
 
-# Install dependencies
+# Install dependencies (nodejs required)
 npm install
 
 # Running in development mode
