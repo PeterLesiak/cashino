@@ -1,0 +1,14 @@
+# dependencies
+/node_modules
+package-lock.json
+
+# next
+/.next/
+/out/
+
+# production
+/build
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

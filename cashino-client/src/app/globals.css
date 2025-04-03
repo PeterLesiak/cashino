@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-*: initial;
+  --color-white: hsl(0 0% 100%);
+  --color-black: hsl(0 0% 0%);
+  --color-light-100: hsl(0 0% 94%);
+  --color-light-300: hsl(0 0% 76%);
+  --color-neutral-300: hsl(224 23.3% 62.2%);
+  --color-neutral-500: hsl(224 23.3% 30%);
+  --color-neutral-600: hsl(237 19.6% 19%);
+  --color-neutral-700: hsl(235 17.6% 13.3%);
+  --color-neutral-800: hsl(236 29.6% 10.6%);
+  --color-neutral-900: hsl(236 29.6% 7%);
+  --color-red-100: hsl(0 100% 92.5%);
+  --color-red-300: hsl(343 100% 66.1%);
+  --color-red-400: hsl(343 100% 56.1%);
+  --color-red-500: hsl(343 100% 46.1%);
+  --color-orange-300: hsl(28 100% 60%);
+  --color-orange-400: hsl(28 100% 50%);
+  --color-yellow-400: hsl(49 94.5% 57.5%);
+  --color-green-400: hsl(110 81.5% 51.4%);
+  --color-green-500: hsl(110 81.5% 31.4%);
+
+  --animate-shake: shake 200ms ease-in-out 0s 2;
+  --animate-expand: expand 200ms ease-out;
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(0.5rem);
+    }
+    75% {
+      transform: translateX(-0.5rem);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: scale(0.4);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+@layer base {
+  body {
+    height: 100vh;
+    background: var(--color-neutral-800);
+  }
+}
